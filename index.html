@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>QAMFY SHOP · Productos Digitales</title>
+<title>QAMFY SHOP · Digital Products</title>
 <meta name="description" content="QAMFY SHOP: productos digitales con atención directa por WhatsApp.">
 <meta name="theme-color" content="#ffffff">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,21 +62,35 @@ footer{padding:22px 20px 28px;text-align:center;font-size:12px;color:#8a92a3;bor
 
 <main>
   <section class="hero">
-    <div class="tag"><span class="dot"></span>Atención en línea ahora</div>
-    <h1>Productos digitales para <span>empezar hoy</span></h1>
-    <p class="sub">Acceso inmediato y soporte directo. Escríbenos por WhatsApp y te explicamos todo en minutos.</p>
-    <a id="main-whatsapp" class="whatsapp-cta" href="https://wa.me/5511930921863?text=%C2%A1Hola%21%20Vi%20su%20anuncio%20y%20tengo%20inter%C3%A9s%20en%20sus%20productos%20digitales.%20%C2%BFMe%20pueden%20dar%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener">
+    <div class="tag"><span class="dot"></span><span data-t="tag">Online support now</span></div>
+    <h1 data-t="h1">Digital products to <span>start today</span></h1>
+    <p class="sub" data-t="sub">Instant access and direct support. Message us on WhatsApp and we'll explain everything in minutes.</p>
+    <a id="main-whatsapp" class="whatsapp-cta" href="https://wa.me/5511930921863?text=Hi%21%20I%20saw%20your%20ad%20and%20I%27m%20interested%20in%20your%20digital%20products.%20Could%20you%20give%20me%20more%20information%3F" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.06 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.48.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.57.94.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.23-9.43 9.44-9.43a9.37 9.37 0 0 1 9.43 9.44c0 5.2-4.24 9.42-9.44 9.42zm8.03-17.46A11.3 11.3 0 0 0 12.05.72C5.79.72.7 5.8.7 12.07c0 2 .52 3.95 1.52 5.67L.6 23.6l6-1.57a11.3 11.3 0 0 0 5.43 1.38h.01c6.26 0 11.35-5.09 11.35-11.35 0-3.03-1.18-5.88-3.32-8.02z"/></svg>
-      Quiero más información
+      <span data-t="btn">I want more information</span>
     </a>
-    <div class="trust"><span>✓ <b>Acceso</b> inmediato</span><span>✓ <b>Soporte</b> por WhatsApp</span></div>
+    <div class="trust"><span data-t="t1">✓ <b>Instant</b> access</span><span data-t="t2">✓ <b>Support</b> via WhatsApp</span></div>
   </section>
 </main>
 
-<footer>© <span id="y"></span> QAMFY SHOP · Productos Digitales</footer>
+<footer>© <span id="y"></span> QAMFY SHOP · <span data-t="foot">Digital Products</span></footer>
 
 <script>
 document.getElementById('y').textContent=new Date().getFullYear();
+(function(){
+  var T={"es": {"title": "QAMFY SHOP · Productos Digitales", "tag": "Atención en línea ahora", "h1": "Productos digitales para <span>empezar hoy</span>", "sub": "Acceso inmediato y soporte directo. Escríbenos por WhatsApp y te explicamos todo en minutos.", "btn": "Quiero más información", "t1": "✓ <b>Acceso</b> inmediato", "t2": "✓ <b>Soporte</b> por WhatsApp", "foot": "Productos Digitales", "msg": "%C2%A1Hola%21%20Vi%20su%20anuncio%20y%20tengo%20inter%C3%A9s%20en%20sus%20productos%20digitales.%20%C2%BFMe%20pueden%20dar%20m%C3%A1s%20informaci%C3%B3n%3F"}, "pt": {"title": "QAMFY SHOP · Produtos Digitais", "tag": "Atendimento online agora", "h1": "Produtos digitais para <span>começar hoje</span>", "sub": "Acesso imediato e suporte direto. Fale com a gente no WhatsApp e explicamos tudo em minutos.", "btn": "Quero mais informações", "t1": "✓ <b>Acesso</b> imediato", "t2": "✓ <b>Suporte</b> pelo WhatsApp", "foot": "Produtos Digitais", "msg": "Ol%C3%A1%21%20Vi%20seu%20an%C3%BAncio%20e%20tenho%20interesse%20nos%20seus%20produtos%20digitais.%20Pode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F"}};
+  var NUM='5511930921863';
+  try{
+    var l=((navigator.languages&&navigator.languages[0])||navigator.language||'en').slice(0,2).toLowerCase();
+    var d=T[l];
+    if(d){
+      document.documentElement.lang=l;
+      document.title=d.title;
+      document.querySelectorAll('[data-t]').forEach(function(el){var k=el.getAttribute('data-t');if(d[k])el.innerHTML=d[k];});
+      document.querySelectorAll('.whatsapp-cta').forEach(function(a){a.href='https://wa.me/'+NUM+'?text='+d.msg;});
+    }
+  }catch(e){}
+})();
 document.querySelectorAll('.whatsapp-cta').forEach(function(el){
   el.addEventListener('click',function(){
     var id=el.id||'whatsapp-cta';
